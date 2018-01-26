@@ -1,0 +1,5 @@
+iex --werl -S mix
+
+TUPLA = ArrayList
+
+List = Linked List

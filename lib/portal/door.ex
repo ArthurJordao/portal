@@ -1,5 +1,5 @@
 defmodule Portal.Door do
-    use Agent
+    use Agent, restart: :temporary
 
     def start_link(color) do
         Agent.start_link(fn -> [] end, name: color)

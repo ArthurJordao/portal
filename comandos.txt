@@ -3,3 +3,5 @@ iex --werl -S mix
 TUPLA = ArrayList
 
 List = Linked List
+
+iex --sname room1 --cookie secret mix

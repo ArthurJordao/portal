@@ -19,6 +19,13 @@ defmodule Portal do
     portal
   end
 
+  def shoot(color) do
+    DynamicSupervisor.start_child(
+      Portal.DoorSupervisor,
+      {Portal.Door, color} # Portal.Door.start_link(color)
+    )
+  end
+
 end
 
 defimpl Inspect, for: Portal do
